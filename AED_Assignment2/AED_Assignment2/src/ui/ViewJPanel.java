@@ -46,13 +46,13 @@ public class ViewJPanel extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         tblViewCarDetails = new javax.swing.JTable();
         jLayeredPane3 = new javax.swing.JLayeredPane();
-        btnViewCarDetails = new javax.swing.JButton();
+        viewDetailsButton = new javax.swing.JButton();
         lblLastUpdatedValue = new javax.swing.JLabel();
-        txtLastUpdatedValue = new javax.swing.JTextField();
-        btnExpiredMaintCert = new javax.swing.JButton();
-        btnFirstAvailableCar = new javax.swing.JButton();
-        btnDeleteCarDetails = new javax.swing.JButton();
-        btnAllAvailableCars = new javax.swing.JButton();
+        lastUpdateText = new javax.swing.JTextField();
+        expiredCertButton = new javax.swing.JButton();
+        firstCarButton = new javax.swing.JButton();
+        deleteDetailsButton = new javax.swing.JButton();
+        allCarsButton = new javax.swing.JButton();
         jLayeredPane4 = new javax.swing.JLayeredPane();
         appBox = new javax.swing.JComboBox<>();
         lblManufacturerFilter = new javax.swing.JLabel();
@@ -108,7 +108,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         chkboxAvailable = new java.awt.Checkbox();
         txtManufacturer = new javax.swing.JTextField();
         txtUsedBy = new javax.swing.JTextField();
-        btnUpdateView = new javax.swing.JButton();
+        updateDetailsButton = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(214, 238, 255));
         setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -141,64 +141,64 @@ public class ViewJPanel extends javax.swing.JPanel {
 
         jLayeredPane3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        btnViewCarDetails.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnViewCarDetails.setText("View");
-        btnViewCarDetails.addActionListener(new java.awt.event.ActionListener() {
+        viewDetailsButton.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        viewDetailsButton.setText("View");
+        viewDetailsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnViewCarDetailsActionPerformed(evt);
+                viewDetailsButtonActionPerformed(evt);
             }
         });
 
         lblLastUpdatedValue.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblLastUpdatedValue.setText("Last Updated");
 
-        txtLastUpdatedValue.setBackground(new java.awt.Color(204, 204, 204));
-        txtLastUpdatedValue.setText("                   ");
-        txtLastUpdatedValue.addActionListener(new java.awt.event.ActionListener() {
+        lastUpdateText.setBackground(new java.awt.Color(204, 204, 204));
+        lastUpdateText.setText("                   ");
+        lastUpdateText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLastUpdatedValueActionPerformed(evt);
+                lastUpdateTextActionPerformed(evt);
             }
         });
 
-        btnExpiredMaintCert.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnExpiredMaintCert.setText("List Expired Certificate");
-        btnExpiredMaintCert.addActionListener(new java.awt.event.ActionListener() {
+        expiredCertButton.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        expiredCertButton.setText("List Expired Certificate");
+        expiredCertButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnExpiredMaintCertActionPerformed(evt);
+                expiredCertButtonActionPerformed(evt);
             }
         });
 
-        btnFirstAvailableCar.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnFirstAvailableCar.setText("First Available Car");
-        btnFirstAvailableCar.addActionListener(new java.awt.event.ActionListener() {
+        firstCarButton.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        firstCarButton.setText("First Available Car");
+        firstCarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnFirstAvailableCarActionPerformed(evt);
+                firstCarButtonActionPerformed(evt);
             }
         });
 
-        btnDeleteCarDetails.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnDeleteCarDetails.setText("Delete");
-        btnDeleteCarDetails.addActionListener(new java.awt.event.ActionListener() {
+        deleteDetailsButton.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        deleteDetailsButton.setText("Delete");
+        deleteDetailsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDeleteCarDetailsActionPerformed(evt);
+                deleteDetailsButtonActionPerformed(evt);
             }
         });
 
-        btnAllAvailableCars.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnAllAvailableCars.setText("All Available Cars");
-        btnAllAvailableCars.addActionListener(new java.awt.event.ActionListener() {
+        allCarsButton.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        allCarsButton.setText("All Available Cars");
+        allCarsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAllAvailableCarsActionPerformed(evt);
+                allCarsButtonActionPerformed(evt);
             }
         });
 
-        jLayeredPane3.setLayer(btnViewCarDetails, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(viewDetailsButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane3.setLayer(lblLastUpdatedValue, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane3.setLayer(txtLastUpdatedValue, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane3.setLayer(btnExpiredMaintCert, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane3.setLayer(btnFirstAvailableCar, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane3.setLayer(btnDeleteCarDetails, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane3.setLayer(btnAllAvailableCars, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(lastUpdateText, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(expiredCertButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(firstCarButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(deleteDetailsButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(allCarsButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPane3Layout = new javax.swing.GroupLayout(jLayeredPane3);
         jLayeredPane3.setLayout(jLayeredPane3Layout);
@@ -206,19 +206,19 @@ public class ViewJPanel extends javax.swing.JPanel {
             jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayeredPane3Layout.createSequentialGroup()
                 .addContainerGap(30, Short.MAX_VALUE)
-                .addComponent(btnViewCarDetails)
+                .addComponent(viewDetailsButton)
                 .addGap(28, 28, 28)
-                .addComponent(btnDeleteCarDetails)
+                .addComponent(deleteDetailsButton)
                 .addGap(18, 18, 18)
-                .addComponent(btnFirstAvailableCar)
+                .addComponent(firstCarButton)
                 .addGap(18, 18, 18)
-                .addComponent(btnAllAvailableCars)
+                .addComponent(allCarsButton)
                 .addGap(18, 18, 18)
                 .addComponent(lblLastUpdatedValue)
                 .addGap(18, 18, 18)
-                .addComponent(txtLastUpdatedValue, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lastUpdateText, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(45, 45, 45)
-                .addComponent(btnExpiredMaintCert)
+                .addComponent(expiredCertButton)
                 .addGap(26, 26, 26))
         );
         jLayeredPane3Layout.setVerticalGroup(
@@ -226,13 +226,13 @@ public class ViewJPanel extends javax.swing.JPanel {
             .addGroup(jLayeredPane3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnViewCarDetails)
-                    .addComponent(btnDeleteCarDetails)
-                    .addComponent(btnFirstAvailableCar)
-                    .addComponent(btnAllAvailableCars)
+                    .addComponent(viewDetailsButton)
+                    .addComponent(deleteDetailsButton)
+                    .addComponent(firstCarButton)
+                    .addComponent(allCarsButton)
                     .addComponent(lblLastUpdatedValue)
-                    .addComponent(txtLastUpdatedValue, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnExpiredMaintCert))
+                    .addComponent(lastUpdateText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(expiredCertButton))
                 .addContainerGap())
         );
 
@@ -315,9 +315,11 @@ public class ViewJPanel extends javax.swing.JPanel {
         lblCountUnAvlCars.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCountUnAvlCars.setText("Occupied");
 
+        txtCountAvlCars.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtCountAvlCars.setText("0");
         txtCountAvlCars.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        txtCountUnAvlCars.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtCountUnAvlCars.setText("0");
         txtCountUnAvlCars.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -620,11 +622,10 @@ public class ViewJPanel extends javax.swing.JPanel {
         jLayeredPane11Layout.setHorizontalGroup(
             jLayeredPane11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayeredPane11Layout.createSequentialGroup()
+                .addGap(33, 33, 33)
                 .addGroup(jLayeredPane11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(txtSerialNumberFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jLayeredPane11Layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(lblSerialNumberFilter)))
+                    .addComponent(lblSerialNumberFilter))
                 .addContainerGap(37, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane11Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
@@ -703,13 +704,13 @@ public class ViewJPanel extends javax.swing.JPanel {
 
         chkboxAvailable.setLabel("Is Available");
 
-        btnUpdateView.setBackground(new java.awt.Color(51, 51, 51));
-        btnUpdateView.setForeground(new java.awt.Color(255, 255, 255));
-        btnUpdateView.setText("Update Car Details");
-        btnUpdateView.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnUpdateView.addActionListener(new java.awt.event.ActionListener() {
+        updateDetailsButton.setBackground(new java.awt.Color(51, 51, 51));
+        updateDetailsButton.setForeground(new java.awt.Color(255, 255, 255));
+        updateDetailsButton.setText("Update Car Details");
+        updateDetailsButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        updateDetailsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUpdateViewActionPerformed(evt);
+                updateDetailsButtonActionPerformed(evt);
             }
         });
 
@@ -733,7 +734,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         jLayeredPane5.setLayer(chkboxAvailable, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane5.setLayer(txtManufacturer, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane5.setLayer(txtUsedBy, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane5.setLayer(btnUpdateView, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane5.setLayer(updateDetailsButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPane5Layout = new javax.swing.GroupLayout(jLayeredPane5);
         jLayeredPane5.setLayout(jLayeredPane5Layout);
@@ -769,7 +770,7 @@ public class ViewJPanel extends javax.swing.JPanel {
                             .addComponent(txtUsedBy)))
                     .addGroup(jLayeredPane5Layout.createSequentialGroup()
                         .addGap(128, 128, 128)
-                        .addComponent(btnUpdateView, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(updateDetailsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
@@ -821,7 +822,7 @@ public class ViewJPanel extends javax.swing.JPanel {
                     .addComponent(jLabel2)
                     .addComponent(chkboxAvailable, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnUpdateView, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE))
+                .addComponent(updateDetailsButton, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE))
         );
 
         jLayeredPane5Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {txtCity, txtLastUpdated, txtMaintenanceCertExpDate, txtManufacturedDate, txtModelNum, txtSeatCapacity, txtSerialNum});
@@ -854,7 +855,6 @@ public class ViewJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, 0)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLayeredPane7)
                             .addComponent(jLayeredPane9))
@@ -865,14 +865,12 @@ public class ViewJPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(104, 104, 104)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, 0)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLayeredPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLayeredPane6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLayeredPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLayeredPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLayeredPane6)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLayeredPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(90, 90, 90)
@@ -925,7 +923,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtModelNumActionPerformed
 
-    private void btnDeleteCarDetailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteCarDetailsActionPerformed
+    private void deleteDetailsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteDetailsButtonActionPerformed
         int selectedRowIndex = tblViewCarDetails.getSelectedRow();
         
         if(selectedRowIndex < 0) {  
@@ -940,9 +938,9 @@ public class ViewJPanel extends javax.swing.JPanel {
         JOptionPane.showMessageDialog(this, "Car deleted");
         
         populateTable();
-    }//GEN-LAST:event_btnDeleteCarDetailsActionPerformed
+    }//GEN-LAST:event_deleteDetailsButtonActionPerformed
 
-    private void btnViewCarDetailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewCarDetailsActionPerformed
+    private void viewDetailsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewDetailsButtonActionPerformed
         int selectedRowIndex = tblViewCarDetails.getSelectedRow();
         
         if(selectedRowIndex < 0) {
@@ -963,23 +961,23 @@ public class ViewJPanel extends javax.swing.JPanel {
         txtMaintenanceCertExpDate.setText(String.valueOf(selectedCar.getMaintenanceCertExpDate()));
         txtLastUpdated.setText(String.valueOf(selectedCar.getLastUpdated()));
         chkboxAvailable.setState(selectedCar.isIsAvailable());
-    }//GEN-LAST:event_btnViewCarDetailsActionPerformed
+    }//GEN-LAST:event_viewDetailsButtonActionPerformed
 
-    private void btnAllAvailableCarsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAllAvailableCarsActionPerformed
+    private void allCarsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_allCarsButtonActionPerformed
 
         String isAvailable = "true";
         populateTableAvailable(isAvailable);
         
-    }//GEN-LAST:event_btnAllAvailableCarsActionPerformed
+    }//GEN-LAST:event_allCarsButtonActionPerformed
 
     private void madeByBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_madeByBoxActionPerformed
         populateTable();
     }//GEN-LAST:event_madeByBoxActionPerformed
 
-    private void btnFirstAvailableCarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFirstAvailableCarActionPerformed
+    private void firstCarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstCarButtonActionPerformed
         String isAvailable = "true";
         populateTableFirstAvailable();
-    }//GEN-LAST:event_btnFirstAvailableCarActionPerformed
+    }//GEN-LAST:event_firstCarButtonActionPerformed
 
     private void availStatusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_availStatusButtonActionPerformed
         int totalCarAvl = 0;
@@ -1030,19 +1028,19 @@ public class ViewJPanel extends javax.swing.JPanel {
         populateTableUsedByApp();
     }//GEN-LAST:event_appBoxActionPerformed
 
-    private void txtLastUpdatedValueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLastUpdatedValueActionPerformed
+    private void lastUpdateTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lastUpdateTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtLastUpdatedValueActionPerformed
+    }//GEN-LAST:event_lastUpdateTextActionPerformed
 
     private void btnCityFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCityFilterActionPerformed
         populateTableCityFilter();
     }//GEN-LAST:event_btnCityFilterActionPerformed
 
-    private void btnExpiredMaintCertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExpiredMaintCertActionPerformed
+    private void expiredCertButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expiredCertButtonActionPerformed
         populateTableExpiredCertFilter();
-    }//GEN-LAST:event_btnExpiredMaintCertActionPerformed
+    }//GEN-LAST:event_expiredCertButtonActionPerformed
 
-    private void btnUpdateViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateViewActionPerformed
+    private void updateDetailsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateDetailsButtonActionPerformed
        int SerialNumber = Integer.parseInt(txtSerialNum.getText());
        for(Car c: carFleetDetails.getCarFleetDetails()) {
             if(!txtSerialNum.getText().isEmpty() && c.getSerialNumber() == SerialNumber) {
@@ -1068,25 +1066,23 @@ public class ViewJPanel extends javax.swing.JPanel {
             }
         }
         populateTable();
-    }//GEN-LAST:event_btnUpdateViewActionPerformed
+    }//GEN-LAST:event_updateDetailsButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton allCarsButton;
     private javax.swing.JComboBox<String> appBox;
     private javax.swing.JButton availStatusButton;
-    private javax.swing.JButton btnAllAvailableCars;
     private javax.swing.JButton btnCityFilter;
-    private javax.swing.JButton btnDeleteCarDetails;
-    private javax.swing.JButton btnExpiredMaintCert;
-    private javax.swing.JButton btnFirstAvailableCar;
     private javax.swing.JButton btnManufacturedDateFilter;
     private javax.swing.JButton btnModelNumberFilter;
     private javax.swing.JButton btnSerialNumberFilter;
-    private javax.swing.JButton btnUpdateView;
-    private javax.swing.JButton btnViewCarDetails;
     private java.awt.Checkbox chkboxAvailable;
     private javax.swing.JComboBox<String> comboBoxMaximumCapacity;
     private javax.swing.JComboBox<String> comboBoxMinCapacity;
+    private javax.swing.JButton deleteDetailsButton;
+    private javax.swing.JButton expiredCertButton;
+    private javax.swing.JButton firstCarButton;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -1100,6 +1096,7 @@ public class ViewJPanel extends javax.swing.JPanel {
     private javax.swing.JLayeredPane jLayeredPane8;
     private javax.swing.JLayeredPane jLayeredPane9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField lastUpdateText;
     private javax.swing.JLabel lblCarManufacturer;
     private javax.swing.JLabel lblCarModelNum;
     private javax.swing.JLabel lblCarSerialNum;
@@ -1128,7 +1125,6 @@ public class ViewJPanel extends javax.swing.JPanel {
     private javax.swing.JTextField txtCountAvlCars;
     private javax.swing.JTextField txtCountUnAvlCars;
     private javax.swing.JTextField txtLastUpdated;
-    private javax.swing.JTextField txtLastUpdatedValue;
     private javax.swing.JTextField txtMaintenanceCertExpDate;
     private javax.swing.JTextField txtManufacturedDate;
     private javax.swing.JTextField txtManufacturedDateFilter;
@@ -1139,6 +1135,8 @@ public class ViewJPanel extends javax.swing.JPanel {
     private javax.swing.JTextField txtSerialNum;
     private javax.swing.JTextField txtSerialNumberFilter;
     private javax.swing.JTextField txtUsedBy;
+    private javax.swing.JButton updateDetailsButton;
+    private javax.swing.JButton viewDetailsButton;
     // End of variables declaration//GEN-END:variables
 
     private void populateTable() {
@@ -1188,7 +1186,7 @@ public class ViewJPanel extends javax.swing.JPanel {
                         maxDate = allUpdates.get(i); 
                 } 
         }
-        txtLastUpdatedValue.setText(String.valueOf(maxDate)); 
+        lastUpdateText.setText(String.valueOf(maxDate)); 
         }
         
     }

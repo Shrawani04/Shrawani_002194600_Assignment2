@@ -29,7 +29,6 @@
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="jLayeredPane7" max="32767" attributes="0"/>
                           <Component id="jLayeredPane9" max="32767" attributes="0"/>
@@ -44,15 +43,12 @@
                       <EmptySpace min="-2" pref="104" max="-2" attributes="0"/>
                       <Component id="jLabel1" min="-2" pref="220" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jLayeredPane4" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLayeredPane6" max="32767" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLayeredPane10" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLayeredPane4" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jLayeredPane6" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLayeredPane10" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -222,19 +218,19 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace pref="30" max="32767" attributes="0"/>
-                  <Component id="btnViewCarDetails" min="-2" max="-2" attributes="0"/>
+                  <Component id="viewDetailsButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="btnDeleteCarDetails" min="-2" max="-2" attributes="0"/>
+                  <Component id="deleteDetailsButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="btnFirstAvailableCar" min="-2" max="-2" attributes="0"/>
+                  <Component id="firstCarButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="btnAllAvailableCars" min="-2" max="-2" attributes="0"/>
+                  <Component id="allCarsButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="lblLastUpdatedValue" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="txtLastUpdatedValue" min="-2" pref="112" max="-2" attributes="0"/>
+                  <Component id="lastUpdateText" min="-2" pref="112" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                  <Component id="btnExpiredMaintCert" min="-2" max="-2" attributes="0"/>
+                  <Component id="expiredCertButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -244,13 +240,13 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnViewCarDetails" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnDeleteCarDetails" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnFirstAvailableCar" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnAllAvailableCars" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="viewDetailsButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="deleteDetailsButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="firstCarButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="allCarsButton" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lblLastUpdatedValue" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtLastUpdatedValue" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnExpiredMaintCert" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lastUpdateText" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="expiredCertButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -258,7 +254,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="btnViewCarDetails">
+        <Component class="javax.swing.JButton" name="viewDetailsButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="12" style="0"/>
@@ -266,7 +262,7 @@
             <Property name="text" type="java.lang.String" value="View"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnViewCarDetailsActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="viewDetailsButtonActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblLastUpdatedValue">
@@ -277,7 +273,7 @@
             <Property name="text" type="java.lang.String" value="Last Updated"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtLastUpdatedValue">
+        <Component class="javax.swing.JTextField" name="lastUpdateText">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -285,10 +281,10 @@
             <Property name="text" type="java.lang.String" value="                   "/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtLastUpdatedValueActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lastUpdateTextActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnExpiredMaintCert">
+        <Component class="javax.swing.JButton" name="expiredCertButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="12" style="0"/>
@@ -296,10 +292,10 @@
             <Property name="text" type="java.lang.String" value="List Expired Certificate"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExpiredMaintCertActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="expiredCertButtonActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnFirstAvailableCar">
+        <Component class="javax.swing.JButton" name="firstCarButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="12" style="0"/>
@@ -307,10 +303,10 @@
             <Property name="text" type="java.lang.String" value="First Available Car"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFirstAvailableCarActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="firstCarButtonActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnDeleteCarDetails">
+        <Component class="javax.swing.JButton" name="deleteDetailsButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="12" style="0"/>
@@ -318,10 +314,10 @@
             <Property name="text" type="java.lang.String" value="Delete"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeleteCarDetailsActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deleteDetailsButtonActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnAllAvailableCars">
+        <Component class="javax.swing.JButton" name="allCarsButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="12" style="0"/>
@@ -329,7 +325,7 @@
             <Property name="text" type="java.lang.String" value="All Available Cars"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAllAvailableCarsActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="allCarsButtonActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
@@ -550,6 +546,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="txtCountAvlCars">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -560,6 +557,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="txtCountUnAvlCars">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="0"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -971,12 +969,10 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
+                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Component id="txtSerialNumberFilter" alignment="1" min="-2" pref="113" max="-2" attributes="0"/>
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                          <Component id="lblSerialNumberFilter" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="lblSerialNumberFilter" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="37" max="32767" attributes="0"/>
               </Group>
@@ -1101,7 +1097,7 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="128" max="-2" attributes="0"/>
-                              <Component id="btnUpdateView" min="-2" pref="131" max="-2" attributes="0"/>
+                              <Component id="updateDetailsButton" min="-2" pref="131" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace pref="21" max="32767" attributes="0"/>
@@ -1162,7 +1158,7 @@
                           <Component id="chkboxAvailable" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="btnUpdateView" pref="30" max="32767" attributes="0"/>
+                      <Component id="updateDetailsButton" pref="30" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1314,7 +1310,7 @@
             </Component>
             <Component class="javax.swing.JTextField" name="txtUsedBy">
             </Component>
-            <Component class="javax.swing.JButton" name="btnUpdateView">
+            <Component class="javax.swing.JButton" name="updateDetailsButton">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="33" red="33" type="rgb"/>
@@ -1330,7 +1326,7 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUpdateViewActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="updateDetailsButtonActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
