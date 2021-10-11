@@ -29,7 +29,7 @@ public class CreateJPanel extends javax.swing.JPanel {
     public CreateJPanel(CarFleet carFleetDetails) {
         initComponents();
         this.carFleetDetails = carFleetDetails;
-        btnSave.setEnabled(false);
+        saveButton.setEnabled(false);
     }
 
     /**
@@ -50,18 +50,18 @@ public class CreateJPanel extends javax.swing.JPanel {
         usedByLabel = new javax.swing.JLabel();
         cityLabel = new javax.swing.JLabel();
         certExpireLabel = new javax.swing.JLabel();
-        txtModelNum = new javax.swing.JTextField();
-        txtSerialNum = new javax.swing.JTextField();
-        txtManufacturedDate = new javax.swing.JTextField();
+        modelNumText = new javax.swing.JTextField();
+        serialNumText = new javax.swing.JTextField();
+        manuDateText = new javax.swing.JTextField();
         txtSeatCapacity = new javax.swing.JTextField();
-        txtCity = new javax.swing.JTextField();
-        txtMaintenanceCertExpDate = new javax.swing.JTextField();
-        btnSave = new javax.swing.JButton();
+        cityText = new javax.swing.JTextField();
+        certExpDateText = new javax.swing.JTextField();
+        saveButton = new javax.swing.JButton();
         isAvailableLabel = new javax.swing.JLabel();
-        chkboxAvailable = new java.awt.Checkbox();
+        availBox = new java.awt.Checkbox();
         appBox = new javax.swing.JComboBox<>();
         lblTitleSubHeading = new javax.swing.JLabel();
-        comboBoxManufacturerCreate = new javax.swing.JComboBox<>();
+        carModelBox = new javax.swing.JComboBox<>();
         lblManuDateErrMsg = new javax.swing.JLabel();
         lblMaintDateExpErrMsg = new javax.swing.JLabel();
         lblModelNumErrMsg = new javax.swing.JLabel();
@@ -115,42 +115,42 @@ public class CreateJPanel extends javax.swing.JPanel {
         certExpireLabel.setText("Certificate Expire Date");
         certExpireLabel.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        txtModelNum.setToolTipText("Only accepts numeric value");
-        txtModelNum.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        txtModelNum.addActionListener(new java.awt.event.ActionListener() {
+        modelNumText.setToolTipText("Only accepts numeric value");
+        modelNumText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        modelNumText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtModelNumActionPerformed(evt);
+                modelNumTextActionPerformed(evt);
             }
         });
-        txtModelNum.addKeyListener(new java.awt.event.KeyAdapter() {
+        modelNumText.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                txtModelNumKeyPressed(evt);
+                modelNumTextKeyPressed(evt);
             }
         });
 
-        txtSerialNum.setToolTipText("Only accepts numeric value");
-        txtSerialNum.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        txtSerialNum.addActionListener(new java.awt.event.ActionListener() {
+        serialNumText.setToolTipText("Only accepts numeric value");
+        serialNumText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        serialNumText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtSerialNumActionPerformed(evt);
+                serialNumTextActionPerformed(evt);
             }
         });
-        txtSerialNum.addKeyListener(new java.awt.event.KeyAdapter() {
+        serialNumText.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                txtSerialNumKeyPressed(evt);
+                serialNumTextKeyPressed(evt);
             }
         });
 
-        txtManufacturedDate.setToolTipText("Enter Date as MM/dd/yyyy");
-        txtManufacturedDate.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        txtManufacturedDate.addActionListener(new java.awt.event.ActionListener() {
+        manuDateText.setToolTipText("Enter Date as MM/dd/yyyy");
+        manuDateText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        manuDateText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtManufacturedDateActionPerformed(evt);
+                manuDateTextActionPerformed(evt);
             }
         });
-        txtManufacturedDate.addKeyListener(new java.awt.event.KeyAdapter() {
+        manuDateText.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                txtManufacturedDateKeyPressed(evt);
+                manuDateTextKeyPressed(evt);
             }
         });
 
@@ -166,37 +166,37 @@ public class CreateJPanel extends javax.swing.JPanel {
             }
         });
 
-        txtCity.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        txtCity.addActionListener(new java.awt.event.ActionListener() {
+        cityText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        cityText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCityActionPerformed(evt);
+                cityTextActionPerformed(evt);
             }
         });
-        txtCity.addKeyListener(new java.awt.event.KeyAdapter() {
+        cityText.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                txtCityKeyPressed(evt);
+                cityTextKeyPressed(evt);
             }
         });
 
-        txtMaintenanceCertExpDate.setToolTipText("Enter Date as MM/dd/yyyy");
-        txtMaintenanceCertExpDate.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        txtMaintenanceCertExpDate.addActionListener(new java.awt.event.ActionListener() {
+        certExpDateText.setToolTipText("Enter Date as MM/dd/yyyy");
+        certExpDateText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        certExpDateText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtMaintenanceCertExpDateActionPerformed(evt);
+                certExpDateTextActionPerformed(evt);
             }
         });
-        txtMaintenanceCertExpDate.addKeyListener(new java.awt.event.KeyAdapter() {
+        certExpDateText.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                txtMaintenanceCertExpDateKeyPressed(evt);
+                certExpDateTextKeyPressed(evt);
             }
         });
 
-        btnSave.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnSave.setText("OK");
-        btnSave.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnSave.addActionListener(new java.awt.event.ActionListener() {
+        saveButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        saveButton.setText("OK");
+        saveButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        saveButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSaveActionPerformed(evt);
+                saveButtonActionPerformed(evt);
             }
         });
 
@@ -205,7 +205,7 @@ public class CreateJPanel extends javax.swing.JPanel {
         isAvailableLabel.setText("Car Availability");
         isAvailableLabel.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        chkboxAvailable.setLabel("Is Available");
+        availBox.setLabel("Is Available");
 
         appBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Uber", "Lyft", "Ola", "All" }));
         appBox.setSelectedIndex(-1);
@@ -219,11 +219,11 @@ public class CreateJPanel extends javax.swing.JPanel {
         lblTitleSubHeading.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitleSubHeading.setText("Fill all Mandatory fields (Marked Bold)");
 
-        comboBoxManufacturerCreate.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Honda", "Volkswagen", "Ford Motor Co.", "Tata Motors", "General Motors" }));
-        comboBoxManufacturerCreate.setSelectedIndex(-1);
-        comboBoxManufacturerCreate.addActionListener(new java.awt.event.ActionListener() {
+        carModelBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Honda", "Volkswagen", "Ford Motor Co.", "Tata Motors", "General Motors" }));
+        carModelBox.setSelectedIndex(-1);
+        carModelBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboBoxManufacturerCreateActionPerformed(evt);
+                carModelBoxActionPerformed(evt);
             }
         });
 
@@ -258,33 +258,33 @@ public class CreateJPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(txtMaintenanceCertExpDate, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(certExpDateText, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(lblMaintDateExpErrMsg, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(chkboxAvailable, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(availBox, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(91, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(txtSerialNum)
+                                .addComponent(serialNumText)
                                 .addGap(18, 18, 18)
                                 .addComponent(lblSerialNumErrMsg, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(txtModelNum)
+                                .addComponent(modelNumText)
                                 .addGap(18, 18, 18)
                                 .addComponent(lblModelNumErrMsg, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(appBox, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(txtCity, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE))
+                                .addComponent(cityText, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(txtSeatCapacity)
                                 .addGap(18, 18, 18)
                                 .addComponent(lblSeatCapacityErrMsg, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(txtManufacturedDate)
+                                .addComponent(manuDateText)
                                 .addGap(18, 18, 18)
                                 .addComponent(lblManuDateErrMsg, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(comboBoxManufacturerCreate, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(carModelBox, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 91, Short.MAX_VALUE))))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -295,11 +295,11 @@ public class CreateJPanel extends javax.swing.JPanel {
                             .addComponent(lblTitleSubHeading, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(164, 164, 164)
-                        .addComponent(btnSave, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(saveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {txtCity, txtManufacturedDate, txtModelNum, txtSeatCapacity, txtSerialNum});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {cityText, manuDateText, modelNumText, serialNumText, txtSeatCapacity});
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {certExpireLabel, cityLabel, isAvailableLabel, lblManufacturedDate, madeByLabel, modelNumLabel, seatAvailLable, serialNumLabel, usedByLabel});
 
@@ -315,23 +315,23 @@ public class CreateJPanel extends javax.swing.JPanel {
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(modelNumLabel)
-                            .addComponent(txtModelNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(modelNumText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblModelNumErrMsg, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(serialNumLabel)
-                            .addComponent(txtSerialNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(serialNumText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(lblSerialNumErrMsg, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(madeByLabel)
-                    .addComponent(comboBoxManufacturerCreate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(carModelBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblManufacturedDate)
-                            .addComponent(txtManufacturedDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(manuDateText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblManuDateErrMsg, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -345,36 +345,36 @@ public class CreateJPanel extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cityLabel)
-                    .addComponent(txtCity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cityText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(16, 16, 16)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(certExpireLabel)
-                        .addComponent(txtMaintenanceCertExpDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(certExpDateText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(lblMaintDateExpErrMsg, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(chkboxAvailable, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(availBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(isAvailableLabel))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
-                .addComponent(btnSave)
+                .addComponent(saveButton)
                 .addGap(38, 38, 38))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {appBox, certExpireLabel, cityLabel, comboBoxManufacturerCreate, isAvailableLabel, lblManufacturedDate, madeByLabel, modelNumLabel, seatAvailLable, serialNumLabel, txtCity, txtMaintenanceCertExpDate, txtManufacturedDate, txtModelNum, txtSeatCapacity, txtSerialNum, usedByLabel});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {appBox, carModelBox, certExpDateText, certExpireLabel, cityLabel, cityText, isAvailableLabel, lblManufacturedDate, madeByLabel, manuDateText, modelNumLabel, modelNumText, seatAvailLable, serialNumLabel, serialNumText, txtSeatCapacity, usedByLabel});
 
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtModelNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtModelNumActionPerformed
+    private void modelNumTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modelNumTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtModelNumActionPerformed
+    }//GEN-LAST:event_modelNumTextActionPerformed
 
-    private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
+    private void saveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveButtonActionPerformed
         SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
-        if (!txtManufacturedDate.getText().isEmpty()) {
+        if (!manuDateText.getText().isEmpty()) {
            try
             {
-                formatter.parse(txtManufacturedDate.getText());
+                formatter.parse(manuDateText.getText());
                 lblManuDateErrMsg.setText("");
                 isFormValid = true;
             }
@@ -385,10 +385,10 @@ public class CreateJPanel extends javax.swing.JPanel {
                 isFormValid = false;
             } 
         }
-        if (!txtMaintenanceCertExpDate.getText().isEmpty()) {
+        if (!certExpDateText.getText().isEmpty()) {
            try
             {
-                formatter.parse(txtMaintenanceCertExpDate.getText());
+                formatter.parse(certExpDateText.getText());
                 lblMaintDateExpErrMsg.setText("");
                 isFormValid = true;
             }
@@ -401,21 +401,21 @@ public class CreateJPanel extends javax.swing.JPanel {
         }
         if (isFormValid) {
           DateTimeFormatter dformatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-            LocalDate localDate = LocalDate.parse(txtManufacturedDate.getText(), dformatter);
-            LocalDate localDateCertExpire = LocalDate.parse(txtMaintenanceCertExpDate.getText(), dformatter);
+            LocalDate localDate = LocalDate.parse(manuDateText.getText(), dformatter);
+            LocalDate localDateCertExpire = LocalDate.parse(certExpDateText.getText(), dformatter);
             LocalDate todaysDate = LocalDate.now();
-            int modelNumber = Integer.parseInt(txtModelNum.getText());
-            int serialNumber = Integer.parseInt(txtSerialNum.getText());  
-            Object createdManufacturer = comboBoxManufacturerCreate.getSelectedItem();
+            int modelNumber = Integer.parseInt(modelNumText.getText());
+            int serialNumber = Integer.parseInt(serialNumText.getText());  
+            Object createdManufacturer = carModelBox.getSelectedItem();
             String manufacturer = createdManufacturer.toString();
             LocalDate manufacturedDate = localDate;
             int seatCapacity = Integer.parseInt(txtSeatCapacity.getText());
             Object createdUsedByApp = appBox.getSelectedItem();
             String usedBy = createdUsedByApp.toString();
             LocalDate lastUpdated = todaysDate;
-            String city = txtCity.getText();
+            String city = cityText.getText();
             LocalDate maintenanceCertExpDate = localDateCertExpire;
-            Boolean IsAvailable = chkboxAvailable.getState();
+            Boolean IsAvailable = availBox.getState();
 
             Car c = carFleetDetails.addNewCar();
 
@@ -432,25 +432,25 @@ public class CreateJPanel extends javax.swing.JPanel {
 
             JOptionPane.showMessageDialog(this, "New Car Record Added");
 
-            txtModelNum.setText("");
-            txtSerialNum.setText("");
-            comboBoxManufacturerCreate.setSelectedIndex(-1);
-            txtManufacturedDate.setText("");
+            modelNumText.setText("");
+            serialNumText.setText("");
+            carModelBox.setSelectedIndex(-1);
+            manuDateText.setText("");
             txtSeatCapacity.setText("");
             appBox.setSelectedIndex(-1);
-            txtCity.setText("");
-            txtMaintenanceCertExpDate.setText("");
-            chkboxAvailable.setState(false);  
+            cityText.setText("");
+            certExpDateText.setText("");
+            availBox.setState(false);  
         }
-    }//GEN-LAST:event_btnSaveActionPerformed
+    }//GEN-LAST:event_saveButtonActionPerformed
 
-    private void txtSerialNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSerialNumActionPerformed
+    private void serialNumTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_serialNumTextActionPerformed
 
-    }//GEN-LAST:event_txtSerialNumActionPerformed
+    }//GEN-LAST:event_serialNumTextActionPerformed
 
-    private void txtManufacturedDateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtManufacturedDateActionPerformed
+    private void manuDateTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manuDateTextActionPerformed
         
-    }//GEN-LAST:event_txtManufacturedDateActionPerformed
+    }//GEN-LAST:event_manuDateTextActionPerformed
 
     private void txtSeatCapacityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSeatCapacityActionPerformed
         
@@ -460,55 +460,55 @@ public class CreateJPanel extends javax.swing.JPanel {
         validateMandatory();
     }//GEN-LAST:event_appBoxActionPerformed
 
-    private void txtCityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCityActionPerformed
+    private void cityTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cityTextActionPerformed
         
-    }//GEN-LAST:event_txtCityActionPerformed
+    }//GEN-LAST:event_cityTextActionPerformed
 
-    private void txtMaintenanceCertExpDateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMaintenanceCertExpDateActionPerformed
+    private void certExpDateTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_certExpDateTextActionPerformed
         
-    }//GEN-LAST:event_txtMaintenanceCertExpDateActionPerformed
+    }//GEN-LAST:event_certExpDateTextActionPerformed
 
-    private void txtModelNumKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtModelNumKeyPressed
+    private void modelNumTextKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_modelNumTextKeyPressed
         // TODO add your handling code here:
         validateMandatory();
         char NumPressed = evt.getKeyChar();
         if(Character.isLetter(NumPressed)){
             isFormValid = false;
-            txtModelNum.setEditable(false);
+            modelNumText.setEditable(false);
             lblModelNumErrMsg.setText("Please enter number Only!");
             validateMandatory();
         }
         else
         {
-            txtModelNum.setEditable(true);
+            modelNumText.setEditable(true);
             isFormValid = true;
             lblModelNumErrMsg.setText("");
             validateMandatory();
         }
-    }//GEN-LAST:event_txtModelNumKeyPressed
+    }//GEN-LAST:event_modelNumTextKeyPressed
 
-    private void txtSerialNumKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtSerialNumKeyPressed
+    private void serialNumTextKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_serialNumTextKeyPressed
         validateMandatory();
         char NumPressed = evt.getKeyChar();
         if(Character.isLetter(NumPressed)){
             isFormValid = false;
-            txtSerialNum.setEditable(false);
+            serialNumText.setEditable(false);
             lblSerialNumErrMsg.setText("Please enter number Only!");
             validateMandatory();
         }
         else
         {
-            txtSerialNum.setEditable(true);
+            serialNumText.setEditable(true);
             isFormValid = true;
             lblSerialNumErrMsg.setText("");
             validateMandatory();
         }
-    }//GEN-LAST:event_txtSerialNumKeyPressed
+    }//GEN-LAST:event_serialNumTextKeyPressed
 
-    private void comboBoxManufacturerCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBoxManufacturerCreateActionPerformed
+    private void carModelBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_carModelBoxActionPerformed
         // TODO add your handling code here:
         validateMandatory();
-    }//GEN-LAST:event_comboBoxManufacturerCreateActionPerformed
+    }//GEN-LAST:event_carModelBoxActionPerformed
 
     private void txtSeatCapacityKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtSeatCapacityKeyPressed
         validateMandatory();
@@ -528,27 +528,28 @@ public class CreateJPanel extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_txtSeatCapacityKeyPressed
 
-    private void txtManufacturedDateKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtManufacturedDateKeyPressed
+    private void manuDateTextKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_manuDateTextKeyPressed
         validateMandatory();
-    }//GEN-LAST:event_txtManufacturedDateKeyPressed
+    }//GEN-LAST:event_manuDateTextKeyPressed
 
-    private void txtCityKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCityKeyPressed
+    private void cityTextKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cityTextKeyPressed
         validateMandatory();
-    }//GEN-LAST:event_txtCityKeyPressed
+    }//GEN-LAST:event_cityTextKeyPressed
 
-    private void txtMaintenanceCertExpDateKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtMaintenanceCertExpDateKeyPressed
+    private void certExpDateTextKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_certExpDateTextKeyPressed
         validateMandatory();
-    }//GEN-LAST:event_txtMaintenanceCertExpDateKeyPressed
+    }//GEN-LAST:event_certExpDateTextKeyPressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> appBox;
-    private javax.swing.JButton btnSave;
+    private java.awt.Checkbox availBox;
     private javax.swing.JLabel btnTitle;
+    private javax.swing.JComboBox<String> carModelBox;
+    private javax.swing.JTextField certExpDateText;
     private javax.swing.JLabel certExpireLabel;
-    private java.awt.Checkbox chkboxAvailable;
     private javax.swing.JLabel cityLabel;
-    private javax.swing.JComboBox<String> comboBoxManufacturerCreate;
+    private javax.swing.JTextField cityText;
     private javax.swing.JLabel isAvailableLabel;
     private javax.swing.JLabel lblMaintDateExpErrMsg;
     private javax.swing.JLabel lblManuDateErrMsg;
@@ -558,22 +559,21 @@ public class CreateJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel lblSerialNumErrMsg;
     private javax.swing.JLabel lblTitleSubHeading;
     private javax.swing.JLabel madeByLabel;
+    private javax.swing.JTextField manuDateText;
     private javax.swing.JLabel modelNumLabel;
+    private javax.swing.JTextField modelNumText;
+    private javax.swing.JButton saveButton;
     private javax.swing.JLabel seatAvailLable;
     private javax.swing.JLabel serialNumLabel;
-    private javax.swing.JTextField txtCity;
-    private javax.swing.JTextField txtMaintenanceCertExpDate;
-    private javax.swing.JTextField txtManufacturedDate;
-    private javax.swing.JTextField txtModelNum;
+    private javax.swing.JTextField serialNumText;
     private javax.swing.JTextField txtSeatCapacity;
-    private javax.swing.JTextField txtSerialNum;
     private javax.swing.JLabel usedByLabel;
     // End of variables declaration//GEN-END:variables
 
     private void validateMandatory() {
-        if (!txtModelNum.getText().isEmpty() && !txtSerialNum.getText().isEmpty()) {
+        if (!modelNumText.getText().isEmpty() && !serialNumText.getText().isEmpty()) {
             isValid = true;
-            btnSave.setEnabled(isValid);
+            saveButton.setEnabled(isValid);
             return;
         }
     }

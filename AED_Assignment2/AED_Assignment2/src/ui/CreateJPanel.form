@@ -39,29 +39,29 @@
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="txtMaintenanceCertExpDate" min="-2" pref="187" max="-2" attributes="0"/>
+                              <Component id="certExpDateText" min="-2" pref="187" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="lblMaintDateExpErrMsg" min="-2" pref="118" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="chkboxAvailable" min="-2" pref="187" max="-2" attributes="0"/>
+                          <Component id="availBox" min="-2" pref="187" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="91" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="txtSerialNum" linkSize="1" max="32767" attributes="0"/>
+                              <Component id="serialNumText" linkSize="1" max="32767" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="lblSerialNumErrMsg" min="-2" pref="118" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="txtModelNum" linkSize="1" max="32767" attributes="0"/>
+                              <Component id="modelNumText" linkSize="1" max="32767" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="lblModelNumErrMsg" min="-2" pref="118" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                               <Component id="appBox" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtCity" linkSize="1" alignment="0" pref="187" max="32767" attributes="0"/>
+                              <Component id="cityText" linkSize="1" alignment="0" pref="187" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="txtSeatCapacity" linkSize="1" max="32767" attributes="0"/>
@@ -69,11 +69,11 @@
                               <Component id="lblSeatCapacityErrMsg" min="-2" pref="118" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="txtManufacturedDate" linkSize="1" max="32767" attributes="0"/>
+                              <Component id="manuDateText" linkSize="1" max="32767" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="lblManuDateErrMsg" min="-2" pref="118" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="comboBoxManufacturerCreate" min="-2" pref="187" max="-2" attributes="0"/>
+                          <Component id="carModelBox" min="-2" pref="187" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="0" pref="91" max="32767" attributes="0"/>
                   </Group>
@@ -90,7 +90,7 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="164" max="-2" attributes="0"/>
-                      <Component id="btnSave" min="-2" pref="116" max="-2" attributes="0"/>
+                      <Component id="saveButton" min="-2" pref="116" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -109,13 +109,13 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="modelNumLabel" linkSize="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtModelNum" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="modelNumText" linkSize="3" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="lblModelNumErrMsg" min="-2" pref="20" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="serialNumLabel" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtSerialNum" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="serialNumText" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Component id="lblSerialNumErrMsg" min="-2" pref="20" max="-2" attributes="0"/>
@@ -123,14 +123,14 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="madeByLabel" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="comboBoxManufacturerCreate" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="carModelBox" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblManufacturedDate" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtManufacturedDate" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="manuDateText" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblManuDateErrMsg" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
@@ -149,23 +149,23 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="cityLabel" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtCity" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cityText" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="certExpireLabel" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtMaintenanceCertExpDate" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="certExpDateText" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Component id="lblMaintDateExpErrMsg" min="-2" pref="20" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="chkboxAvailable" min="-2" max="-2" attributes="0"/>
+                  <Component id="availBox" min="-2" max="-2" attributes="0"/>
                   <Component id="isAvailableLabel" linkSize="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="41" max="32767" attributes="0"/>
-              <Component id="btnSave" min="-2" max="-2" attributes="0"/>
+              <Component id="saveButton" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -298,7 +298,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtModelNum">
+    <Component class="javax.swing.JTextField" name="modelNumText">
       <Properties>
         <Property name="toolTipText" type="java.lang.String" value="Only accepts numeric value"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -308,11 +308,11 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtModelNumActionPerformed"/>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtModelNumKeyPressed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="modelNumTextActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="modelNumTextKeyPressed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtSerialNum">
+    <Component class="javax.swing.JTextField" name="serialNumText">
       <Properties>
         <Property name="toolTipText" type="java.lang.String" value="Only accepts numeric value"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -322,11 +322,11 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSerialNumActionPerformed"/>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtSerialNumKeyPressed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="serialNumTextActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="serialNumTextKeyPressed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtManufacturedDate">
+    <Component class="javax.swing.JTextField" name="manuDateText">
       <Properties>
         <Property name="toolTipText" type="java.lang.String" value="Enter Date as MM/dd/yyyy"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -336,8 +336,8 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtManufacturedDateActionPerformed"/>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtManufacturedDateKeyPressed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="manuDateTextActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="manuDateTextKeyPressed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtSeatCapacity">
@@ -353,7 +353,7 @@
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtSeatCapacityKeyPressed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtCity">
+    <Component class="javax.swing.JTextField" name="cityText">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -362,11 +362,11 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCityActionPerformed"/>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtCityKeyPressed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cityTextActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="cityTextKeyPressed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtMaintenanceCertExpDate">
+    <Component class="javax.swing.JTextField" name="certExpDateText">
       <Properties>
         <Property name="toolTipText" type="java.lang.String" value="Enter Date as MM/dd/yyyy"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -376,11 +376,11 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtMaintenanceCertExpDateActionPerformed"/>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtMaintenanceCertExpDateKeyPressed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="certExpDateTextActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="certExpDateTextKeyPressed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnSave">
+    <Component class="javax.swing.JButton" name="saveButton">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="1"/>
@@ -393,7 +393,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSaveActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveButtonActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="isAvailableLabel">
@@ -410,7 +410,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="java.awt.Checkbox" name="chkboxAvailable">
+    <Component class="java.awt.Checkbox" name="availBox">
       <Properties>
         <Property name="label" type="java.lang.String" value="Is Available"/>
       </Properties>
@@ -445,7 +445,7 @@
         <Property name="text" type="java.lang.String" value="Fill all Mandatory fields (Marked Bold)"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="comboBoxManufacturerCreate">
+    <Component class="javax.swing.JComboBox" name="carModelBox">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="5">
@@ -461,7 +461,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboBoxManufacturerCreateActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="carModelBoxActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
