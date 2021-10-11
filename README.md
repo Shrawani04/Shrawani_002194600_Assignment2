@@ -15,3 +15,12 @@ The objective of this assignment is to practice managing a group of objects from
 * When was the last time the fleet catalog was updated.
 * List all cars that are available in a given city.
 * List all cars that have expired maintenance certificate.
+
+## Output
+
+![image](https://user-images.githubusercontent.com/90482355/136728464-62c56874-79f8-4a9c-9fe8-67072130cb26.png)
+
+![image](https://user-images.githubusercontent.com/90482355/136728701-272bc8ad-783d-42e2-90cb-22033aa54710.png)
+
+![image](https://user-images.githubusercontent.com/90482355/136729433-396129b6-de5f-4dbe-9515-7a2cc66278cc.png)
+
