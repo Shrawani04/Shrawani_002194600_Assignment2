@@ -65,26 +65,26 @@ public class ViewJPanel extends javax.swing.JPanel {
         txtCountUnAvlCars = new javax.swing.JTextField();
         availStatusButton = new javax.swing.JButton();
         jLayeredPane7 = new javax.swing.JLayeredPane();
-        btnManufacturedDateFilter = new javax.swing.JButton();
+        manuYearButton = new javax.swing.JButton();
         lblManufacturedYearFilter = new javax.swing.JLabel();
-        txtManufacturedDateFilter = new javax.swing.JTextField();
+        manuYearFilterText = new javax.swing.JTextField();
         jLayeredPane8 = new javax.swing.JLayeredPane();
         lblManufacturedYearFilter1 = new javax.swing.JLabel();
         lblMinSeat = new javax.swing.JLabel();
-        comboBoxMaximumCapacity = new javax.swing.JComboBox<>();
+        maxSeatsBox = new javax.swing.JComboBox<>();
         lblMaxSeat = new javax.swing.JLabel();
-        comboBoxMinCapacity = new javax.swing.JComboBox<>();
+        minSeatsBox = new javax.swing.JComboBox<>();
         jLayeredPane9 = new javax.swing.JLayeredPane();
-        btnModelNumberFilter = new javax.swing.JButton();
+        modelFilterButton = new javax.swing.JButton();
         txtModelNumberFilter = new javax.swing.JTextField();
         lblModelNumberFilter = new javax.swing.JLabel();
         jLayeredPane10 = new javax.swing.JLayeredPane();
-        btnCityFilter = new javax.swing.JButton();
+        cityFilterButton = new javax.swing.JButton();
         lblCityFilter = new javax.swing.JLabel();
-        txtCityFilter = new javax.swing.JTextField();
+        cityFilterText = new javax.swing.JTextField();
         jLayeredPane11 = new javax.swing.JLayeredPane();
-        txtSerialNumberFilter = new javax.swing.JTextField();
-        btnSerialNumberFilter = new javax.swing.JButton();
+        serialNoFilterText = new javax.swing.JTextField();
+        serialNoFilterButton = new javax.swing.JButton();
         lblSerialNumberFilter = new javax.swing.JLabel();
         jDesktopPane1 = new javax.swing.JDesktopPane();
         jLayeredPane5 = new javax.swing.JLayeredPane();
@@ -380,22 +380,22 @@ public class ViewJPanel extends javax.swing.JPanel {
 
         jLayeredPane7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        btnManufacturedDateFilter.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btnManufacturedDateFilter.setText("OK");
-        btnManufacturedDateFilter.addActionListener(new java.awt.event.ActionListener() {
+        manuYearButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        manuYearButton.setText("OK");
+        manuYearButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnManufacturedDateFilterActionPerformed(evt);
+                manuYearButtonActionPerformed(evt);
             }
         });
 
         lblManufacturedYearFilter.setFont(new java.awt.Font("Times New Roman", 1, 13)); // NOI18N
         lblManufacturedYearFilter.setText("Filter by Manufactured Year");
 
-        txtManufacturedDateFilter.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        manuYearFilterText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLayeredPane7.setLayer(btnManufacturedDateFilter, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane7.setLayer(manuYearButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane7.setLayer(lblManufacturedYearFilter, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane7.setLayer(txtManufacturedDateFilter, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane7.setLayer(manuYearFilterText, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPane7Layout = new javax.swing.GroupLayout(jLayeredPane7);
         jLayeredPane7.setLayout(jLayeredPane7Layout);
@@ -408,10 +408,10 @@ public class ViewJPanel extends javax.swing.JPanel {
                         .addComponent(lblManufacturedYearFilter))
                     .addGroup(jLayeredPane7Layout.createSequentialGroup()
                         .addGap(26, 26, 26)
-                        .addComponent(txtManufacturedDateFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(manuYearFilterText, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jLayeredPane7Layout.createSequentialGroup()
                         .addGap(48, 48, 48)
-                        .addComponent(btnManufacturedDateFilter)))
+                        .addComponent(manuYearButton)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jLayeredPane7Layout.setVerticalGroup(
@@ -420,9 +420,9 @@ public class ViewJPanel extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(lblManufacturedYearFilter)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtManufacturedDateFilter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(manuYearFilterText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnManufacturedDateFilter)
+                .addComponent(manuYearButton)
                 .addContainerGap())
         );
 
@@ -436,31 +436,31 @@ public class ViewJPanel extends javax.swing.JPanel {
         lblMinSeat.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblMinSeat.setText("Min.");
 
-        comboBoxMaximumCapacity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2", "3", "4", "5", "6", "7", "8", "9", "10", "11" }));
-        comboBoxMaximumCapacity.setSelectedIndex(9);
-        comboBoxMaximumCapacity.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        comboBoxMaximumCapacity.addActionListener(new java.awt.event.ActionListener() {
+        maxSeatsBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2", "3", "4", "5", "6", "7", "8", "9", "10", "11" }));
+        maxSeatsBox.setSelectedIndex(9);
+        maxSeatsBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        maxSeatsBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboBoxMaximumCapacityActionPerformed(evt);
+                maxSeatsBoxActionPerformed(evt);
             }
         });
 
         lblMaxSeat.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblMaxSeat.setText("Max.");
 
-        comboBoxMinCapacity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
-        comboBoxMinCapacity.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        comboBoxMinCapacity.addActionListener(new java.awt.event.ActionListener() {
+        minSeatsBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
+        minSeatsBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        minSeatsBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboBoxMinCapacityActionPerformed(evt);
+                minSeatsBoxActionPerformed(evt);
             }
         });
 
         jLayeredPane8.setLayer(lblManufacturedYearFilter1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane8.setLayer(lblMinSeat, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane8.setLayer(comboBoxMaximumCapacity, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane8.setLayer(maxSeatsBox, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane8.setLayer(lblMaxSeat, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane8.setLayer(comboBoxMinCapacity, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane8.setLayer(minSeatsBox, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPane8Layout = new javax.swing.GroupLayout(jLayeredPane8);
         jLayeredPane8.setLayout(jLayeredPane8Layout);
@@ -479,9 +479,9 @@ public class ViewJPanel extends javax.swing.JPanel {
                                 .addGap(0, 0, Short.MAX_VALUE)))
                         .addContainerGap())
                     .addGroup(jLayeredPane8Layout.createSequentialGroup()
-                        .addComponent(comboBoxMinCapacity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(minSeatsBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(comboBoxMaximumCapacity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(maxSeatsBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(28, 28, 28))))
         );
         jLayeredPane8Layout.setVerticalGroup(
@@ -495,18 +495,18 @@ public class ViewJPanel extends javax.swing.JPanel {
                     .addComponent(lblMaxSeat))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jLayeredPane8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(comboBoxMinCapacity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(comboBoxMaximumCapacity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(minSeatsBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(maxSeatsBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(30, Short.MAX_VALUE))
         );
 
         jLayeredPane9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        btnModelNumberFilter.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btnModelNumberFilter.setText("OK");
-        btnModelNumberFilter.addActionListener(new java.awt.event.ActionListener() {
+        modelFilterButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        modelFilterButton.setText("OK");
+        modelFilterButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnModelNumberFilterActionPerformed(evt);
+                modelFilterButtonActionPerformed(evt);
             }
         });
 
@@ -516,7 +516,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         lblModelNumberFilter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblModelNumberFilter.setText("Filter by Model Number");
 
-        jLayeredPane9.setLayer(btnModelNumberFilter, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane9.setLayer(modelFilterButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane9.setLayer(txtModelNumberFilter, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane9.setLayer(lblModelNumberFilter, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -534,7 +534,7 @@ public class ViewJPanel extends javax.swing.JPanel {
                 .addContainerGap())
             .addGroup(jLayeredPane9Layout.createSequentialGroup()
                 .addGap(40, 40, 40)
-                .addComponent(btnModelNumberFilter)
+                .addComponent(modelFilterButton)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jLayeredPane9Layout.setVerticalGroup(
@@ -545,17 +545,17 @@ public class ViewJPanel extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtModelNumberFilter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnModelNumberFilter)
+                .addComponent(modelFilterButton)
                 .addContainerGap(26, Short.MAX_VALUE))
         );
 
         jLayeredPane10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        btnCityFilter.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btnCityFilter.setText("OK");
-        btnCityFilter.addActionListener(new java.awt.event.ActionListener() {
+        cityFilterButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        cityFilterButton.setText("OK");
+        cityFilterButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCityFilterActionPerformed(evt);
+                cityFilterButtonActionPerformed(evt);
             }
         });
 
@@ -563,11 +563,11 @@ public class ViewJPanel extends javax.swing.JPanel {
         lblCityFilter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCityFilter.setText("Filter by City");
 
-        txtCityFilter.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        cityFilterText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLayeredPane10.setLayer(btnCityFilter, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane10.setLayer(cityFilterButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane10.setLayer(lblCityFilter, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane10.setLayer(txtCityFilter, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane10.setLayer(cityFilterText, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPane10Layout = new javax.swing.GroupLayout(jLayeredPane10);
         jLayeredPane10.setLayout(jLayeredPane10Layout);
@@ -578,12 +578,12 @@ public class ViewJPanel extends javax.swing.JPanel {
                 .addGroup(jLayeredPane10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jLayeredPane10Layout.createSequentialGroup()
                         .addGap(10, 10, 10)
-                        .addComponent(txtCityFilter))
+                        .addComponent(cityFilterText))
                     .addComponent(lblCityFilter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(23, 23, 23))
             .addGroup(jLayeredPane10Layout.createSequentialGroup()
                 .addGap(55, 55, 55)
-                .addComponent(btnCityFilter)
+                .addComponent(cityFilterButton)
                 .addContainerGap(86, Short.MAX_VALUE))
         );
         jLayeredPane10Layout.setVerticalGroup(
@@ -592,29 +592,29 @@ public class ViewJPanel extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(lblCityFilter)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtCityFilter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cityFilterText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnCityFilter)
+                .addComponent(cityFilterButton)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jLayeredPane11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        txtSerialNumberFilter.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        serialNoFilterText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        btnSerialNumberFilter.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btnSerialNumberFilter.setText("OK");
-        btnSerialNumberFilter.addActionListener(new java.awt.event.ActionListener() {
+        serialNoFilterButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        serialNoFilterButton.setText("OK");
+        serialNoFilterButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSerialNumberFilterActionPerformed(evt);
+                serialNoFilterButtonActionPerformed(evt);
             }
         });
 
         lblSerialNumberFilter.setFont(new java.awt.Font("Times New Roman", 1, 13)); // NOI18N
         lblSerialNumberFilter.setText("Filter by Serial Number");
 
-        jLayeredPane11.setLayer(txtSerialNumberFilter, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane11.setLayer(btnSerialNumberFilter, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane11.setLayer(serialNoFilterText, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane11.setLayer(serialNoFilterButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane11.setLayer(lblSerialNumberFilter, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPane11Layout = new javax.swing.GroupLayout(jLayeredPane11);
@@ -624,12 +624,12 @@ public class ViewJPanel extends javax.swing.JPanel {
             .addGroup(jLayeredPane11Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addGroup(jLayeredPane11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txtSerialNumberFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(serialNoFilterText, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblSerialNumberFilter))
                 .addContainerGap(37, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane11Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnSerialNumberFilter)
+                .addComponent(serialNoFilterButton)
                 .addGap(67, 67, 67))
         );
         jLayeredPane11Layout.setVerticalGroup(
@@ -638,9 +638,9 @@ public class ViewJPanel extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(lblSerialNumberFilter)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtSerialNumberFilter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(serialNoFilterText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnSerialNumberFilter)
+                .addComponent(serialNoFilterButton)
                 .addContainerGap(13, Short.MAX_VALUE))
         );
 
@@ -994,35 +994,35 @@ public class ViewJPanel extends javax.swing.JPanel {
         txtCountUnAvlCars.setText(String.valueOf(countUnAvlCar));
     }//GEN-LAST:event_availStatusButtonActionPerformed
 
-    private void btnManufacturedDateFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManufacturedDateFilterActionPerformed
+    private void manuYearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manuYearButtonActionPerformed
 
         populateTableManufacturedYear();
-    }//GEN-LAST:event_btnManufacturedDateFilterActionPerformed
+    }//GEN-LAST:event_manuYearButtonActionPerformed
 
-    private void comboBoxMinCapacityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBoxMinCapacityActionPerformed
+    private void minSeatsBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minSeatsBoxActionPerformed
 
-        Object countMinCapacity = comboBoxMinCapacity.getSelectedItem();
+        Object countMinCapacity = minSeatsBox.getSelectedItem();
         int countMinCapacityInt = Integer.parseInt(countMinCapacity.toString());
-        comboBoxMaximumCapacity.removeAllItems();
+        maxSeatsBox.removeAllItems();
         for (int i=countMinCapacityInt; i<=10 ; i++) {
             String newcountMinCapacityInt = String.valueOf(i + 1);
-            comboBoxMaximumCapacity.addItem(newcountMinCapacityInt);
+            maxSeatsBox.addItem(newcountMinCapacityInt);
         }
         populateSeatCapacityFilterTable();
-    }//GEN-LAST:event_comboBoxMinCapacityActionPerformed
+    }//GEN-LAST:event_minSeatsBoxActionPerformed
 
-    private void comboBoxMaximumCapacityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBoxMaximumCapacityActionPerformed
+    private void maxSeatsBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_maxSeatsBoxActionPerformed
 
         populateSeatCapacityFilterTable();
-    }//GEN-LAST:event_comboBoxMaximumCapacityActionPerformed
+    }//GEN-LAST:event_maxSeatsBoxActionPerformed
 
-    private void btnSerialNumberFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSerialNumberFilterActionPerformed
+    private void serialNoFilterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_serialNoFilterButtonActionPerformed
         populateTableSerialNumberFilter();
-    }//GEN-LAST:event_btnSerialNumberFilterActionPerformed
+    }//GEN-LAST:event_serialNoFilterButtonActionPerformed
 
-    private void btnModelNumberFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModelNumberFilterActionPerformed
+    private void modelFilterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modelFilterButtonActionPerformed
         populateTableModelNumberFilter();
-    }//GEN-LAST:event_btnModelNumberFilterActionPerformed
+    }//GEN-LAST:event_modelFilterButtonActionPerformed
 
     private void appBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_appBoxActionPerformed
         populateTableUsedByApp();
@@ -1032,9 +1032,9 @@ public class ViewJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_lastUpdateTextActionPerformed
 
-    private void btnCityFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCityFilterActionPerformed
+    private void cityFilterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cityFilterButtonActionPerformed
         populateTableCityFilter();
-    }//GEN-LAST:event_btnCityFilterActionPerformed
+    }//GEN-LAST:event_cityFilterButtonActionPerformed
 
     private void expiredCertButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expiredCertButtonActionPerformed
         populateTableExpiredCertFilter();
@@ -1073,13 +1073,9 @@ public class ViewJPanel extends javax.swing.JPanel {
     private javax.swing.JButton allCarsButton;
     private javax.swing.JComboBox<String> appBox;
     private javax.swing.JButton availStatusButton;
-    private javax.swing.JButton btnCityFilter;
-    private javax.swing.JButton btnManufacturedDateFilter;
-    private javax.swing.JButton btnModelNumberFilter;
-    private javax.swing.JButton btnSerialNumberFilter;
     private java.awt.Checkbox chkboxAvailable;
-    private javax.swing.JComboBox<String> comboBoxMaximumCapacity;
-    private javax.swing.JComboBox<String> comboBoxMinCapacity;
+    private javax.swing.JButton cityFilterButton;
+    private javax.swing.JTextField cityFilterText;
     private javax.swing.JButton deleteDetailsButton;
     private javax.swing.JButton expiredCertButton;
     private javax.swing.JButton firstCarButton;
@@ -1119,21 +1115,25 @@ public class ViewJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel lblUsedBy;
     private javax.swing.JLabel lblUsedByApp;
     private javax.swing.JComboBox<String> madeByBox;
+    private javax.swing.JButton manuYearButton;
+    private javax.swing.JTextField manuYearFilterText;
+    private javax.swing.JComboBox<String> maxSeatsBox;
+    private javax.swing.JComboBox<String> minSeatsBox;
+    private javax.swing.JButton modelFilterButton;
+    private javax.swing.JButton serialNoFilterButton;
+    private javax.swing.JTextField serialNoFilterText;
     private javax.swing.JTable tblViewCarDetails;
     private javax.swing.JTextField txtCity;
-    private javax.swing.JTextField txtCityFilter;
     private javax.swing.JTextField txtCountAvlCars;
     private javax.swing.JTextField txtCountUnAvlCars;
     private javax.swing.JTextField txtLastUpdated;
     private javax.swing.JTextField txtMaintenanceCertExpDate;
     private javax.swing.JTextField txtManufacturedDate;
-    private javax.swing.JTextField txtManufacturedDateFilter;
     private javax.swing.JTextField txtManufacturer;
     private javax.swing.JTextField txtModelNum;
     private javax.swing.JTextField txtModelNumberFilter;
     private javax.swing.JTextField txtSeatCapacity;
     private javax.swing.JTextField txtSerialNum;
-    private javax.swing.JTextField txtSerialNumberFilter;
     private javax.swing.JTextField txtUsedBy;
     private javax.swing.JButton updateDetailsButton;
     private javax.swing.JButton viewDetailsButton;
@@ -1278,7 +1278,7 @@ public class ViewJPanel extends javax.swing.JPanel {
     private void populateTableManufacturedYear() {
         DefaultTableModel model = (DefaultTableModel) tblViewCarDetails.getModel();
         model.setRowCount(0);
-        int manufacturedYear = Integer.parseInt(txtManufacturedDateFilter.getText());
+        int manufacturedYear = Integer.parseInt(manuYearFilterText.getText());
         
         for(Car c: carFleetDetails.getCarFleetDetails()) {
             int manuYear = c.getManufacturedDate().getYear();
@@ -1303,13 +1303,13 @@ public class ViewJPanel extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) tblViewCarDetails.getModel();
         model.setRowCount(0);
         
-        Object selectedMinCapacity = comboBoxMinCapacity.getSelectedItem();
-        Object selectedMaxCapacity = comboBoxMaximumCapacity.getSelectedItem();
+        Object selectedMinCapacity = minSeatsBox.getSelectedItem();
+        Object selectedMaxCapacity = maxSeatsBox.getSelectedItem();
         
         for(Car c: carFleetDetails.getCarFleetDetails()) {
             int countMinCapacityInt = Integer.parseInt(selectedMinCapacity.toString());
             int countMaxCapacityInt = 11;
-            if(comboBoxMaximumCapacity.getSelectedItem() != null) {
+            if(maxSeatsBox.getSelectedItem() != null) {
                countMaxCapacityInt = Integer.parseInt(selectedMaxCapacity.toString()); 
             }
             if (c.getSeatCapacity() <= countMaxCapacityInt && c.getSeatCapacity() >= countMinCapacityInt) {
@@ -1332,7 +1332,7 @@ public class ViewJPanel extends javax.swing.JPanel {
     private void populateTableSerialNumberFilter() {
         DefaultTableModel model = (DefaultTableModel) tblViewCarDetails.getModel();
         model.setRowCount(0);
-        int serialNumber = Integer.parseInt(txtSerialNumberFilter.getText());
+        int serialNumber = Integer.parseInt(serialNoFilterText.getText());
         
         for(Car c: carFleetDetails.getCarFleetDetails()) {
             int seriNum = c.getSerialNumber();
@@ -1380,7 +1380,7 @@ public class ViewJPanel extends javax.swing.JPanel {
     private void populateTableCityFilter() {
         DefaultTableModel model = (DefaultTableModel) tblViewCarDetails.getModel();
         model.setRowCount(0);
-        String typeCity = txtCityFilter.getText();
+        String typeCity = cityFilterText.getText();
         
         for(Car c: carFleetDetails.getCarFleetDetails()) {
             String city = c.getCity();

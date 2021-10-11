@@ -599,11 +599,11 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="txtManufacturedDateFilter" min="-2" pref="98" max="-2" attributes="0"/>
+                          <Component id="manuYearFilterText" min="-2" pref="98" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                          <Component id="btnManufacturedDateFilter" min="-2" max="-2" attributes="0"/>
+                          <Component id="manuYearButton" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -616,16 +616,16 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="lblManufacturedYearFilter" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="txtManufacturedDateFilter" min="-2" max="-2" attributes="0"/>
+                  <Component id="manuYearFilterText" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="btnManufacturedDateFilter" min="-2" max="-2" attributes="0"/>
+                  <Component id="manuYearButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="btnManufacturedDateFilter">
+        <Component class="javax.swing.JButton" name="manuYearButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="12" style="1"/>
@@ -633,7 +633,7 @@
             <Property name="text" type="java.lang.String" value="OK"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnManufacturedDateFilterActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="manuYearButtonActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblManufacturedYearFilter">
@@ -644,7 +644,7 @@
             <Property name="text" type="java.lang.String" value="Filter by Manufactured Year"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtManufacturedDateFilter">
+        <Component class="javax.swing.JTextField" name="manuYearFilterText">
           <Properties>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -686,9 +686,9 @@
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
-                          <Component id="comboBoxMinCapacity" min="-2" max="-2" attributes="0"/>
+                          <Component id="minSeatsBox" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="comboBoxMaximumCapacity" min="-2" max="-2" attributes="0"/>
+                          <Component id="maxSeatsBox" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -707,8 +707,8 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="comboBoxMinCapacity" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="comboBoxMaximumCapacity" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="minSeatsBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="maxSeatsBox" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="30" max="32767" attributes="0"/>
               </Group>
@@ -733,7 +733,7 @@
             <Property name="text" type="java.lang.String" value="Min."/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="comboBoxMaximumCapacity">
+        <Component class="javax.swing.JComboBox" name="maxSeatsBox">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="10">
@@ -759,7 +759,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboBoxMaximumCapacityActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="maxSeatsBoxActionPerformed"/>
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -773,7 +773,7 @@
             <Property name="text" type="java.lang.String" value="Max."/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="comboBoxMinCapacity">
+        <Component class="javax.swing.JComboBox" name="minSeatsBox">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="10">
@@ -796,7 +796,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboBoxMinCapacityActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="minSeatsBoxActionPerformed"/>
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -829,7 +829,7 @@
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="btnModelNumberFilter" min="-2" max="-2" attributes="0"/>
+                  <Component id="modelFilterButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -842,14 +842,14 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="txtModelNumberFilter" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="btnModelNumberFilter" min="-2" max="-2" attributes="0"/>
+                  <Component id="modelFilterButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="26" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="btnModelNumberFilter">
+        <Component class="javax.swing.JButton" name="modelFilterButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="12" style="1"/>
@@ -857,7 +857,7 @@
             <Property name="text" type="java.lang.String" value="OK"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnModelNumberFilterActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="modelFilterButtonActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtModelNumberFilter">
@@ -897,7 +897,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Component id="txtCityFilter" max="32767" attributes="0"/>
+                          <Component id="cityFilterText" max="32767" attributes="0"/>
                       </Group>
                       <Component id="lblCityFilter" max="32767" attributes="0"/>
                   </Group>
@@ -905,7 +905,7 @@
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-                  <Component id="btnCityFilter" min="-2" max="-2" attributes="0"/>
+                  <Component id="cityFilterButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="86" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -916,16 +916,16 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="lblCityFilter" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="txtCityFilter" min="-2" max="-2" attributes="0"/>
+                  <Component id="cityFilterText" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="btnCityFilter" min="-2" max="-2" attributes="0"/>
+                  <Component id="cityFilterButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="btnCityFilter">
+        <Component class="javax.swing.JButton" name="cityFilterButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="12" style="1"/>
@@ -933,7 +933,7 @@
             <Property name="text" type="java.lang.String" value="OK"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCityFilterActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cityFilterButtonActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblCityFilter">
@@ -945,7 +945,7 @@
             <Property name="text" type="java.lang.String" value="Filter by City"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtCityFilter">
+        <Component class="javax.swing.JTextField" name="cityFilterText">
           <Properties>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -971,14 +971,14 @@
               <Group type="102" attributes="0">
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="txtSerialNumberFilter" alignment="1" min="-2" pref="113" max="-2" attributes="0"/>
+                      <Component id="serialNoFilterText" alignment="1" min="-2" pref="113" max="-2" attributes="0"/>
                       <Component id="lblSerialNumberFilter" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="37" max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  <Component id="btnSerialNumberFilter" min="-2" max="-2" attributes="0"/>
+                  <Component id="serialNoFilterButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -989,16 +989,16 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="lblSerialNumberFilter" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="txtSerialNumberFilter" min="-2" max="-2" attributes="0"/>
+                  <Component id="serialNoFilterText" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="btnSerialNumberFilter" min="-2" max="-2" attributes="0"/>
+                  <Component id="serialNoFilterButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="13" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JTextField" name="txtSerialNumberFilter">
+        <Component class="javax.swing.JTextField" name="serialNoFilterText">
           <Properties>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -1007,7 +1007,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="btnSerialNumberFilter">
+        <Component class="javax.swing.JButton" name="serialNoFilterButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="12" style="1"/>
@@ -1015,7 +1015,7 @@
             <Property name="text" type="java.lang.String" value="OK"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSerialNumberFilterActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="serialNoFilterButtonActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblSerialNumberFilter">
