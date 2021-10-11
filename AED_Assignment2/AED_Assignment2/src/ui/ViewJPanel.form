@@ -1083,16 +1083,16 @@
                               </Group>
                               <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="txtModelNum" linkSize="1" pref="250" max="32767" attributes="0"/>
-                                  <Component id="txtSerialNum" linkSize="1" pref="246" max="32767" attributes="0"/>
-                                  <Component id="txtManufacturedDate" linkSize="1" alignment="0" pref="246" max="32767" attributes="0"/>
-                                  <Component id="txtSeatCapacity" linkSize="1" pref="246" max="32767" attributes="0"/>
-                                  <Component id="txtCity" linkSize="1" pref="187" max="32767" attributes="0"/>
-                                  <Component id="txtMaintenanceCertExpDate" linkSize="1" pref="187" max="32767" attributes="0"/>
-                                  <Component id="txtLastUpdated" linkSize="1" alignment="0" pref="187" max="32767" attributes="0"/>
-                                  <Component id="chkboxAvailable" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtManufacturer" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtUsedBy" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="modelNumText" linkSize="1" pref="250" max="32767" attributes="0"/>
+                                  <Component id="serialNumText" linkSize="1" pref="246" max="32767" attributes="0"/>
+                                  <Component id="manuOnText" linkSize="1" alignment="0" pref="246" max="32767" attributes="0"/>
+                                  <Component id="availSeatsText" linkSize="1" pref="246" max="32767" attributes="0"/>
+                                  <Component id="cityText" linkSize="1" pref="187" max="32767" attributes="0"/>
+                                  <Component id="certExpText" linkSize="1" pref="187" max="32767" attributes="0"/>
+                                  <Component id="lastUpdatedTextBox" linkSize="1" alignment="0" pref="187" max="32767" attributes="0"/>
+                                  <Component id="availBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="manuByText" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="appText" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -1110,52 +1110,52 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblCarModelNum" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtModelNum" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="modelNumText" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtSerialNum" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="serialNumText" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblCarSerialNum" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtManufacturer" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="manuByText" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblCarManufacturer" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtManufacturedDate" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="manuOnText" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblManufacturedDate" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtSeatCapacity" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="availSeatsText" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblSeatCapacity" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblUsedBy" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtUsedBy" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="appText" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblCity" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtCity" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cityText" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblMaintenanceCertExpDate" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtMaintenanceCertExpDate" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="certExpText" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblLastUpdated" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtLastUpdated" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lastUpdatedTextBox" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jLabel2" linkSize="4" min="-2" max="-2" attributes="0"/>
-                          <Component id="chkboxAvailable" min="-2" max="-2" attributes="0"/>
+                          <Component id="availBox" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="updateDetailsButton" pref="30" max="32767" attributes="0"/>
@@ -1248,7 +1248,7 @@
                 <Property name="text" type="java.lang.String" value="Made By"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtSeatCapacity">
+            <Component class="javax.swing.JTextField" name="availSeatsText">
             </Component>
             <Component class="javax.swing.JLabel" name="lblCarModelNum">
               <Properties>
@@ -1262,16 +1262,16 @@
                 <Property name="text" type="java.lang.String" value="Model Number"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtSerialNum">
+            <Component class="javax.swing.JTextField" name="serialNumText">
             </Component>
-            <Component class="javax.swing.JTextField" name="txtLastUpdated">
+            <Component class="javax.swing.JTextField" name="lastUpdatedTextBox">
             </Component>
-            <Component class="javax.swing.JTextField" name="txtModelNum">
+            <Component class="javax.swing.JTextField" name="modelNumText">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtModelNumActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="modelNumTextActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtCity">
+            <Component class="javax.swing.JTextField" name="cityText">
             </Component>
             <Component class="javax.swing.JLabel" name="lblLastUpdated">
               <Properties>
@@ -1285,7 +1285,7 @@
                 <Property name="text" type="java.lang.String" value="Last Updated"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtMaintenanceCertExpDate">
+            <Component class="javax.swing.JTextField" name="certExpText">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
@@ -1299,16 +1299,16 @@
                 <Property name="text" type="java.lang.String" value="Availability of Car"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtManufacturedDate">
+            <Component class="javax.swing.JTextField" name="manuOnText">
             </Component>
-            <Component class="java.awt.Checkbox" name="chkboxAvailable">
+            <Component class="java.awt.Checkbox" name="availBox">
               <Properties>
                 <Property name="label" type="java.lang.String" value="Is Available"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtManufacturer">
+            <Component class="javax.swing.JTextField" name="manuByText">
             </Component>
-            <Component class="javax.swing.JTextField" name="txtUsedBy">
+            <Component class="javax.swing.JTextField" name="appText">
             </Component>
             <Component class="javax.swing.JButton" name="updateDetailsButton">
               <Properties>

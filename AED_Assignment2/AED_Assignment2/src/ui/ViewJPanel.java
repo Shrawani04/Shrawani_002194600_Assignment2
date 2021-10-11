@@ -95,19 +95,19 @@ public class ViewJPanel extends javax.swing.JPanel {
         lblCarSerialNum = new javax.swing.JLabel();
         lblCity = new javax.swing.JLabel();
         lblCarManufacturer = new javax.swing.JLabel();
-        txtSeatCapacity = new javax.swing.JTextField();
+        availSeatsText = new javax.swing.JTextField();
         lblCarModelNum = new javax.swing.JLabel();
-        txtSerialNum = new javax.swing.JTextField();
-        txtLastUpdated = new javax.swing.JTextField();
-        txtModelNum = new javax.swing.JTextField();
-        txtCity = new javax.swing.JTextField();
+        serialNumText = new javax.swing.JTextField();
+        lastUpdatedTextBox = new javax.swing.JTextField();
+        modelNumText = new javax.swing.JTextField();
+        cityText = new javax.swing.JTextField();
         lblLastUpdated = new javax.swing.JLabel();
-        txtMaintenanceCertExpDate = new javax.swing.JTextField();
+        certExpText = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        txtManufacturedDate = new javax.swing.JTextField();
-        chkboxAvailable = new java.awt.Checkbox();
-        txtManufacturer = new javax.swing.JTextField();
-        txtUsedBy = new javax.swing.JTextField();
+        manuOnText = new javax.swing.JTextField();
+        availBox = new java.awt.Checkbox();
+        manuByText = new javax.swing.JTextField();
+        appText = new javax.swing.JTextField();
         updateDetailsButton = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(214, 238, 255));
@@ -686,9 +686,9 @@ public class ViewJPanel extends javax.swing.JPanel {
         lblCarModelNum.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCarModelNum.setText("Model Number");
 
-        txtModelNum.addActionListener(new java.awt.event.ActionListener() {
+        modelNumText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtModelNumActionPerformed(evt);
+                modelNumTextActionPerformed(evt);
             }
         });
 
@@ -702,7 +702,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Availability of Car");
 
-        chkboxAvailable.setLabel("Is Available");
+        availBox.setLabel("Is Available");
 
         updateDetailsButton.setBackground(new java.awt.Color(51, 51, 51));
         updateDetailsButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -721,19 +721,19 @@ public class ViewJPanel extends javax.swing.JPanel {
         jLayeredPane5.setLayer(lblCarSerialNum, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane5.setLayer(lblCity, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane5.setLayer(lblCarManufacturer, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane5.setLayer(txtSeatCapacity, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane5.setLayer(availSeatsText, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane5.setLayer(lblCarModelNum, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane5.setLayer(txtSerialNum, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane5.setLayer(txtLastUpdated, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane5.setLayer(txtModelNum, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane5.setLayer(txtCity, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane5.setLayer(serialNumText, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane5.setLayer(lastUpdatedTextBox, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane5.setLayer(modelNumText, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane5.setLayer(cityText, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane5.setLayer(lblLastUpdated, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane5.setLayer(txtMaintenanceCertExpDate, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane5.setLayer(certExpText, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane5.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane5.setLayer(txtManufacturedDate, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane5.setLayer(chkboxAvailable, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane5.setLayer(txtManufacturer, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane5.setLayer(txtUsedBy, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane5.setLayer(manuOnText, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane5.setLayer(availBox, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane5.setLayer(manuByText, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane5.setLayer(appText, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane5.setLayer(updateDetailsButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPane5Layout = new javax.swing.GroupLayout(jLayeredPane5);
@@ -758,23 +758,23 @@ public class ViewJPanel extends javax.swing.JPanel {
                             .addComponent(lblCarManufacturer))
                         .addGap(42, 42, 42)
                         .addGroup(jLayeredPane5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtModelNum, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
-                            .addComponent(txtSerialNum, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
-                            .addComponent(txtManufacturedDate, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
-                            .addComponent(txtSeatCapacity, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
-                            .addComponent(txtCity, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
-                            .addComponent(txtMaintenanceCertExpDate, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
-                            .addComponent(txtLastUpdated, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
-                            .addComponent(chkboxAvailable, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtManufacturer)
-                            .addComponent(txtUsedBy)))
+                            .addComponent(modelNumText, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
+                            .addComponent(serialNumText, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
+                            .addComponent(manuOnText, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
+                            .addComponent(availSeatsText, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
+                            .addComponent(cityText, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
+                            .addComponent(certExpText, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
+                            .addComponent(lastUpdatedTextBox, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
+                            .addComponent(availBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(manuByText)
+                            .addComponent(appText)))
                     .addGroup(jLayeredPane5Layout.createSequentialGroup()
                         .addGap(128, 128, 128)
                         .addComponent(updateDetailsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        jLayeredPane5Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {txtCity, txtLastUpdated, txtMaintenanceCertExpDate, txtManufacturedDate, txtModelNum, txtSeatCapacity, txtSerialNum});
+        jLayeredPane5Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {availSeatsText, certExpText, cityText, lastUpdatedTextBox, manuOnText, modelNumText, serialNumText});
 
         jLayeredPane5Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jLabel2, lblCarManufacturer, lblCarModelNum, lblCarSerialNum, lblCity, lblLastUpdated, lblMaintenanceCertExpDate, lblManufacturedDate, lblSeatCapacity, lblUsedBy});
 
@@ -784,48 +784,48 @@ public class ViewJPanel extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(jLayeredPane5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCarModelNum)
-                    .addComponent(txtModelNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(modelNumText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(12, 12, 12)
                 .addGroup(jLayeredPane5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtSerialNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(serialNumText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblCarSerialNum))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jLayeredPane5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtManufacturer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(manuByText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblCarManufacturer))
                 .addGap(12, 12, 12)
                 .addGroup(jLayeredPane5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtManufacturedDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(manuOnText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblManufacturedDate))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jLayeredPane5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtSeatCapacity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(availSeatsText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblSeatCapacity))
                 .addGap(12, 12, 12)
                 .addGroup(jLayeredPane5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblUsedBy)
-                    .addComponent(txtUsedBy, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(appText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(12, 12, 12)
                 .addGroup(jLayeredPane5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCity)
-                    .addComponent(txtCity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cityText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(12, 12, 12)
                 .addGroup(jLayeredPane5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblMaintenanceCertExpDate)
-                    .addComponent(txtMaintenanceCertExpDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(certExpText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(12, 12, 12)
                 .addGroup(jLayeredPane5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblLastUpdated)
-                    .addComponent(txtLastUpdated, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lastUpdatedTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(12, 12, 12)
                 .addGroup(jLayeredPane5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel2)
-                    .addComponent(chkboxAvailable, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(availBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(updateDetailsButton, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE))
         );
 
-        jLayeredPane5Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {txtCity, txtLastUpdated, txtMaintenanceCertExpDate, txtManufacturedDate, txtModelNum, txtSeatCapacity, txtSerialNum});
+        jLayeredPane5Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {availSeatsText, certExpText, cityText, lastUpdatedTextBox, manuOnText, modelNumText, serialNumText});
 
         jLayeredPane5Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jLabel2, lblCarManufacturer, lblCarModelNum, lblCarSerialNum, lblCity, lblLastUpdated, lblMaintenanceCertExpDate, lblManufacturedDate, lblSeatCapacity, lblUsedBy});
 
@@ -919,9 +919,9 @@ public class ViewJPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtModelNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtModelNumActionPerformed
+    private void modelNumTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modelNumTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtModelNumActionPerformed
+    }//GEN-LAST:event_modelNumTextActionPerformed
 
     private void deleteDetailsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteDetailsButtonActionPerformed
         int selectedRowIndex = tblViewCarDetails.getSelectedRow();
@@ -951,16 +951,16 @@ public class ViewJPanel extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) tblViewCarDetails.getModel();
         Car selectedCar = (Car) model.getValueAt(selectedRowIndex, 0);
         
-        txtModelNum.setText(String.valueOf(selectedCar.getModelNumber()));
-        txtSerialNum.setText(String.valueOf(selectedCar.getSerialNumber()));
-        txtManufacturer.setText(selectedCar.getManufacturer());
-        txtManufacturedDate.setText(String.valueOf(selectedCar.getManufacturedDate()));
-        txtSeatCapacity.setText(String.valueOf(selectedCar.getSeatCapacity()));
-        txtUsedBy.setText(selectedCar.getUsedByApp());
-        txtCity.setText(selectedCar.getCity());
-        txtMaintenanceCertExpDate.setText(String.valueOf(selectedCar.getMaintenanceCertExpDate()));
-        txtLastUpdated.setText(String.valueOf(selectedCar.getLastUpdated()));
-        chkboxAvailable.setState(selectedCar.isIsAvailable());
+        modelNumText.setText(String.valueOf(selectedCar.getModelNumber()));
+        serialNumText.setText(String.valueOf(selectedCar.getSerialNumber()));
+        manuByText.setText(selectedCar.getManufacturer());
+        manuOnText.setText(String.valueOf(selectedCar.getManufacturedDate()));
+        availSeatsText.setText(String.valueOf(selectedCar.getSeatCapacity()));
+        appText.setText(selectedCar.getUsedByApp());
+        cityText.setText(selectedCar.getCity());
+        certExpText.setText(String.valueOf(selectedCar.getMaintenanceCertExpDate()));
+        lastUpdatedTextBox.setText(String.valueOf(selectedCar.getLastUpdated()));
+        availBox.setState(selectedCar.isIsAvailable());
     }//GEN-LAST:event_viewDetailsButtonActionPerformed
 
     private void allCarsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_allCarsButtonActionPerformed
@@ -1041,23 +1041,23 @@ public class ViewJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_expiredCertButtonActionPerformed
 
     private void updateDetailsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateDetailsButtonActionPerformed
-       int SerialNumber = Integer.parseInt(txtSerialNum.getText());
+       int SerialNumber = Integer.parseInt(serialNumText.getText());
        for(Car c: carFleetDetails.getCarFleetDetails()) {
-            if(!txtSerialNum.getText().isEmpty() && c.getSerialNumber() == SerialNumber) {
+            if(!serialNumText.getText().isEmpty() && c.getSerialNumber() == SerialNumber) {
                 LocalDate todaysDate = LocalDate.now();
-                boolean available = chkboxAvailable.getState();
+                boolean available = availBox.getState();
                 DateTimeFormatter dformatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-                LocalDate localDate = LocalDate.parse(txtManufacturedDate.getText(), dformatter);
+                LocalDate localDate = LocalDate.parse(manuOnText.getText(), dformatter);
                 LocalDate manufacturedDate = localDate;
-                LocalDate localDateCerExp = LocalDate.parse(txtMaintenanceCertExpDate.getText(), dformatter);
+                LocalDate localDateCerExp = LocalDate.parse(certExpText.getText(), dformatter);
                 Object viewUsedByApp = appBox.getSelectedItem();
                 String usedBy = viewUsedByApp.toString();
                 Object viewManufacturedBy = madeByBox.getSelectedItem();
                 String manufacturedBy = viewManufacturedBy.toString();
-                c.setModelNumber(Integer.parseInt(txtModelNum.getText()));
+                c.setModelNumber(Integer.parseInt(modelNumText.getText()));
                 c.setManufacturedDate(manufacturedDate);
-                c.setSeatCapacity(Integer.parseInt(txtSeatCapacity.getText()));
-                c.setCity(txtCity.getText());
+                c.setSeatCapacity(Integer.parseInt(availSeatsText.getText()));
+                c.setCity(cityText.getText());
                 c.setUsedByApp(usedBy);
                 c.setManufacturer(manufacturedBy);
                 c.setMaintenanceCertExpDate(localDateCerExp);
@@ -1072,10 +1072,14 @@ public class ViewJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton allCarsButton;
     private javax.swing.JComboBox<String> appBox;
+    private javax.swing.JTextField appText;
+    private java.awt.Checkbox availBox;
+    private javax.swing.JTextField availSeatsText;
     private javax.swing.JButton availStatusButton;
-    private java.awt.Checkbox chkboxAvailable;
+    private javax.swing.JTextField certExpText;
     private javax.swing.JButton cityFilterButton;
     private javax.swing.JTextField cityFilterText;
+    private javax.swing.JTextField cityText;
     private javax.swing.JButton deleteDetailsButton;
     private javax.swing.JButton expiredCertButton;
     private javax.swing.JButton firstCarButton;
@@ -1093,6 +1097,7 @@ public class ViewJPanel extends javax.swing.JPanel {
     private javax.swing.JLayeredPane jLayeredPane9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField lastUpdateText;
+    private javax.swing.JTextField lastUpdatedTextBox;
     private javax.swing.JLabel lblCarManufacturer;
     private javax.swing.JLabel lblCarModelNum;
     private javax.swing.JLabel lblCarSerialNum;
@@ -1115,26 +1120,21 @@ public class ViewJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel lblUsedBy;
     private javax.swing.JLabel lblUsedByApp;
     private javax.swing.JComboBox<String> madeByBox;
+    private javax.swing.JTextField manuByText;
+    private javax.swing.JTextField manuOnText;
     private javax.swing.JButton manuYearButton;
     private javax.swing.JTextField manuYearFilterText;
     private javax.swing.JComboBox<String> maxSeatsBox;
     private javax.swing.JComboBox<String> minSeatsBox;
     private javax.swing.JButton modelFilterButton;
+    private javax.swing.JTextField modelNumText;
     private javax.swing.JButton serialNoFilterButton;
     private javax.swing.JTextField serialNoFilterText;
+    private javax.swing.JTextField serialNumText;
     private javax.swing.JTable tblViewCarDetails;
-    private javax.swing.JTextField txtCity;
     private javax.swing.JTextField txtCountAvlCars;
     private javax.swing.JTextField txtCountUnAvlCars;
-    private javax.swing.JTextField txtLastUpdated;
-    private javax.swing.JTextField txtMaintenanceCertExpDate;
-    private javax.swing.JTextField txtManufacturedDate;
-    private javax.swing.JTextField txtManufacturer;
-    private javax.swing.JTextField txtModelNum;
     private javax.swing.JTextField txtModelNumberFilter;
-    private javax.swing.JTextField txtSeatCapacity;
-    private javax.swing.JTextField txtSerialNum;
-    private javax.swing.JTextField txtUsedBy;
     private javax.swing.JButton updateDetailsButton;
     private javax.swing.JButton viewDetailsButton;
     // End of variables declaration//GEN-END:variables
