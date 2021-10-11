@@ -1038,7 +1038,7 @@ public class ViewJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_cityFilterButtonActionPerformed
 
     private void expiredCertButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expiredCertButtonActionPerformed
-        populateTableExpiredCertFilter();
+        tableExpiredCertFilterShow();
     }//GEN-LAST:event_expiredCertButtonActionPerformed
 
     private void updateDetailsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateDetailsButtonActionPerformed
@@ -1401,7 +1401,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         }
     }
 
-    private void populateTableExpiredCertFilter() {
+    private void tableExpiredCertFilterShow() {
         DefaultTableModel model = (DefaultTableModel) tblViewCarDetails.getModel();
         model.setRowCount(0);
         LocalDate lt = LocalDate.now();
