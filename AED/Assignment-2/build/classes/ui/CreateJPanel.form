@@ -89,7 +89,7 @@
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="164" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="141" max="-2" attributes="0"/>
                       <Component id="saveButton" min="-2" pref="116" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -164,9 +164,9 @@
                   <Component id="availBox" min="-2" max="-2" attributes="0"/>
                   <Component id="isAvailableLabel" linkSize="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="41" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
               <Component id="saveButton" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+              <EmptySpace pref="50" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -449,11 +449,11 @@
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="5">
-            <StringItem index="0" value="Honda"/>
-            <StringItem index="1" value="Volkswagen"/>
-            <StringItem index="2" value="Ford Motor Co."/>
-            <StringItem index="3" value="Tata Motors"/>
-            <StringItem index="4" value="General Motors"/>
+            <StringItem index="0" value="Acura"/>
+            <StringItem index="1" value="Audi"/>
+            <StringItem index="2" value="Bentley"/>
+            <StringItem index="3" value="Cadillac"/>
+            <StringItem index="4" value="Dodge"/>
           </StringArray>
         </Property>
         <Property name="selectedIndex" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">

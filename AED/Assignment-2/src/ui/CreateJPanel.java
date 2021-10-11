@@ -219,7 +219,7 @@ public class CreateJPanel extends javax.swing.JPanel {
         lblTitleSubHeading.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitleSubHeading.setText("Fill all Mandatory fields (Marked Bold)");
 
-        carModelBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Honda", "Volkswagen", "Ford Motor Co.", "Tata Motors", "General Motors" }));
+        carModelBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Acura", "Audi", "Bentley", "Cadillac", "Dodge" }));
         carModelBox.setSelectedIndex(-1);
         carModelBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -294,7 +294,7 @@ public class CreateJPanel extends javax.swing.JPanel {
                             .addComponent(btnTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 236, Short.MAX_VALUE)
                             .addComponent(lblTitleSubHeading, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(164, 164, 164)
+                        .addGap(141, 141, 141)
                         .addComponent(saveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -356,9 +356,9 @@ public class CreateJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(availBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(isAvailableLabel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addGap(29, 29, 29)
                 .addComponent(saveButton)
-                .addGap(38, 38, 38))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {appBox, carModelBox, certExpDateText, certExpireLabel, cityLabel, cityText, isAvailableLabel, lblManufacturedDate, madeByLabel, manuDateText, modelNumLabel, modelNumText, seatAvailLable, serialNumLabel, serialNumText, txtSeatCapacity, usedByLabel});

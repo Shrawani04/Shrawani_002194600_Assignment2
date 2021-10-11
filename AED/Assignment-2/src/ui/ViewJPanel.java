@@ -118,6 +118,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         jLabel1.setText("View Car Details");
         jLabel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
+        tblViewCarDetails.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         tblViewCarDetails.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null},
@@ -679,7 +680,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         lblCarManufacturer.setFont(new java.awt.Font("Times New Roman", 1, 13)); // NOI18N
         lblCarManufacturer.setForeground(new java.awt.Color(255, 255, 255));
         lblCarManufacturer.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblCarManufacturer.setText("Made By");
+        lblCarManufacturer.setText("Car Model");
 
         lblCarModelNum.setFont(new java.awt.Font("Times New Roman", 1, 13)); // NOI18N
         lblCarModelNum.setForeground(new java.awt.Color(255, 255, 255));
@@ -880,7 +881,7 @@ public class ViewJPanel extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLayeredPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 884, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(27, 27, 27))
+                .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -908,7 +909,7 @@ public class ViewJPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(jLayeredPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(10, 10, 10)
                         .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(10, 10, 10)
@@ -1380,12 +1381,11 @@ public class ViewJPanel extends javax.swing.JPanel {
     private void populateTableCityFilter() {
         DefaultTableModel model = (DefaultTableModel) tblViewCarDetails.getModel();
         model.setRowCount(0);
-        String typeCity = cityFilterText.getText();
         
         for(Car c: carFleetDetails.getCarFleetDetails()) {
-            String city = c.getCity();
+            String cityName = c.getCity();
             
-            if(city == typeCity) {
+            if(cityFilterText.getText().equals(cityName)) {
                 Object [] row = new Object[8];
                 row[0] = c;
                 row[1] = c.getSerialNumber();
