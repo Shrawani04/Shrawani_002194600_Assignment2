@@ -967,7 +967,7 @@ public class ViewJPanel extends javax.swing.JPanel {
     private void allCarsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_allCarsButtonActionPerformed
 
         String isAvailable = "true";
-        populateTableAvailable(isAvailable);
+        TableAvailable(isAvailable);
         
     }//GEN-LAST:event_allCarsButtonActionPerformed
 
@@ -977,7 +977,7 @@ public class ViewJPanel extends javax.swing.JPanel {
 
     private void firstCarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstCarButtonActionPerformed
         String isAvailable = "true";
-        populateTableFirstAvailable();
+        TableFirstAvailable();
     }//GEN-LAST:event_firstCarButtonActionPerformed
 
     private void availStatusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_availStatusButtonActionPerformed
@@ -997,7 +997,7 @@ public class ViewJPanel extends javax.swing.JPanel {
 
     private void manuYearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manuYearButtonActionPerformed
 
-        populateTableManufacturedYear();
+        TableManufactured();
     }//GEN-LAST:event_manuYearButtonActionPerformed
 
     private void minSeatsBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minSeatsBoxActionPerformed
@@ -1009,24 +1009,24 @@ public class ViewJPanel extends javax.swing.JPanel {
             String newcountMinCapacityInt = String.valueOf(i + 1);
             maxSeatsBox.addItem(newcountMinCapacityInt);
         }
-        populateSeatCapacityFilterTable();
+        seatCapacityTable();
     }//GEN-LAST:event_minSeatsBoxActionPerformed
 
     private void maxSeatsBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_maxSeatsBoxActionPerformed
 
-        populateSeatCapacityFilterTable();
+        seatCapacityTable();
     }//GEN-LAST:event_maxSeatsBoxActionPerformed
 
     private void serialNoFilterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_serialNoFilterButtonActionPerformed
-        populateTableSerialNumberFilter();
+        serialNumberTable();
     }//GEN-LAST:event_serialNoFilterButtonActionPerformed
 
     private void modelFilterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modelFilterButtonActionPerformed
-        populateTableModelNumberFilter();
+        TableModelNumberFilter();
     }//GEN-LAST:event_modelFilterButtonActionPerformed
 
     private void appBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_appBoxActionPerformed
-        populateTableUsedByApp();
+        TableUsedByPlatform();
     }//GEN-LAST:event_appBoxActionPerformed
 
     private void lastUpdateTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lastUpdateTextActionPerformed
@@ -1034,7 +1034,7 @@ public class ViewJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_lastUpdateTextActionPerformed
 
     private void cityFilterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cityFilterButtonActionPerformed
-        populateTableCityFilter();
+        TableCityFilter();
     }//GEN-LAST:event_cityFilterButtonActionPerformed
 
     private void expiredCertButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expiredCertButtonActionPerformed
@@ -1192,7 +1192,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         
     }
     
-    private void populateTableUsedByApp() {
+    private void TableUsedByPlatform() {
         DefaultTableModel model = (DefaultTableModel) tblViewCarDetails.getModel();
         model.setRowCount(0);
         
@@ -1228,7 +1228,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         
     }
     
-    private void populateTableAvailable(String isAvailable) {
+    private void TableAvailable(String isAvailable) {
         DefaultTableModel model = (DefaultTableModel) tblViewCarDetails.getModel();
         model.setRowCount(0);
         
@@ -1251,7 +1251,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         
     }
     
-    private void populateTableFirstAvailable() {
+    private void TableFirstAvailable() {
         DefaultTableModel model = (DefaultTableModel) tblViewCarDetails.getModel();
         model.setRowCount(0);
         
@@ -1276,7 +1276,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         
     }
 
-    private void populateTableManufacturedYear() {
+    private void TableManufactured() {
         DefaultTableModel model = (DefaultTableModel) tblViewCarDetails.getModel();
         model.setRowCount(0);
         int manufacturedYear = Integer.parseInt(manuYearFilterText.getText());
@@ -1300,7 +1300,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         }
     }
 
-    private void populateSeatCapacityFilterTable() {
+    private void seatCapacityTable() {
         DefaultTableModel model = (DefaultTableModel) tblViewCarDetails.getModel();
         model.setRowCount(0);
         
@@ -1330,7 +1330,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         
     }
 
-    private void populateTableSerialNumberFilter() {
+    private void serialNumberTable() {
         DefaultTableModel model = (DefaultTableModel) tblViewCarDetails.getModel();
         model.setRowCount(0);
         int serialNumber = Integer.parseInt(serialNoFilterText.getText());
@@ -1354,7 +1354,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         }
     }
     
-    private void populateTableModelNumberFilter() {
+    private void TableModelNumberFilter() {
         DefaultTableModel model = (DefaultTableModel) tblViewCarDetails.getModel();
         model.setRowCount(0);
         int modelNumber = Integer.parseInt(txtModelNumberFilter.getText());
@@ -1378,7 +1378,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         }
     }
 
-    private void populateTableCityFilter() {
+    private void TableCityFilter() {
         DefaultTableModel model = (DefaultTableModel) tblViewCarDetails.getModel();
         model.setRowCount(0);
         
